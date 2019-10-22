@@ -1,0 +1,12 @@
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\Database.dll.config
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\Database.dll
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\Database.pdb
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\EntityFramework.dll
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\EntityFramework.xml
+C:\Users\sasch\source\repos\Authorization\Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sasch\source\repos\Authorization\Database\obj\Debug\Database.csprojAssemblyReference.cache
+C:\Users\sasch\source\repos\Authorization\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\sasch\source\repos\Authorization\Database\obj\Debug\Database.csproj.CopyComplete
+C:\Users\sasch\source\repos\Authorization\Database\obj\Debug\Database.dll
+C:\Users\sasch\source\repos\Authorization\Database\obj\Debug\Database.pdb
