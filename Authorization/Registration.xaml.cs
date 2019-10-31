@@ -44,7 +44,7 @@ namespace Authorization
                 string firstName = FirstName.Text;
                 string patronymic = Patronymic.Text;
                 string login = Login.Text;
-                string password = Password.Text;
+                string password = VerificationPassword.Verification(Password.Text);
                 string retryPassword = RetryPassword.Text;
                 string rollName = RollName.Text;
                 int roll=0;

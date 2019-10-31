@@ -54,6 +54,7 @@
     <Compile Include="Enums\RollEnum.cs" />
     <Compile Include="Model\AuthorizationProcess.cs" />
     <Compile Include="Model\RegistrationProcess.cs" />
+    <Compile Include="Model\VerificationPassword.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticValue.cs" />
     <Compile Include="ViewModel\RollesView.cs" />
