@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Database.EntityModels
 {
-    public class Roll
+    public class Rolle
     {
         public int Id { get; set; }
         public string name { get; set; }

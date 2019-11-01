@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using Logic.Model;
 using Logic.ViewModel;
-using Logic.Model;
+using System;
+using System.Collections.Generic;
+using System.Windows;
 namespace Authorization
 {
     /// <summary>
@@ -30,38 +20,40 @@ namespace Authorization
                 RollName.ItemsSource = rolles.Values;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error : " + ex.Message);
             }
- 
+
         }
         private void RegistrationGo_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                string lastName = LastName.Text;
-                string firstName = FirstName.Text;
-                string patronymic = Patronymic.Text;
-                string login = Login.Text;
-                string password = VerificationPassword.Verification(Password.Text);
-                string retryPassword = RetryPassword.Text;
-                string rollName = RollName.Text;
-                int roll=0;
-                if (password == retryPassword)
+                UserRegistrationModel newUser = new UserRegistrationModel();
+
+                newUser.FirstName = FirstName.Text;
+                newUser.LastName = LastName.Text;
+                newUser.Patronymic = Patronymic.Text;
+                newUser.Login = Login.Text;
+
+                foreach (var item in rolles)
                 {
-                    foreach (var item in rolles)
-                    {
-                        if (item.Value == rollName)
-                            roll = item.Key;
-                    }
-                    if (RegistrationProcess.SaveUser(lastName, firstName, patronymic, login, password, roll))
-                        MessageBox.Show("Регистрация прошла успешно!");
-                    MainWindow Authorization = new MainWindow();
-                    Authorization.Show();
-                    this.Close();
+                    if (item.Value == RollName.Text)
+                        newUser.Rolle = item.Key;
                 }
-                else throw new Exception("Пароли не совпадают");
+
+                if (Password.Text == RetryPassword.Text)
+                    newUser.Password = Password.Text;
+                else throw new Exception("Введенные пароли не совпадают");
+
+                UserLogic.Registration(newUser);
+
+                MessageBox.Show("Регистрация прошла успешно!");
+
+                MainWindow Authorization = new MainWindow();
+                Authorization.Show();
+                this.Close();
 
             }
             catch (Exception ex)

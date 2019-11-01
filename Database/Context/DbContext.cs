@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Database.Context
 {
-   public class UserContext : DbContext
+   public class DbContext : System.Data.Entity.DbContext
     {
-        public UserContext() : base("DBconnect")
+        public DbContext() : base("DBconnect")
         {
 
         }
         public DbSet<User> User { get; set; }
-        public DbSet<Roll> Roll { get; set; }
+        public DbSet<Rolle> Roll { get; set; }
     }
 }

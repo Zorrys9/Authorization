@@ -22,3 +22,15 @@ C:\Users\Марина\source\repos\Authorization\Database\obj\Debug\Database.csp
 C:\Users\Марина\source\repos\Authorization\Database\obj\Debug\Database.csproj.CopyComplete
 C:\Users\Марина\source\repos\Authorization\Database\obj\Debug\Database.dll
 C:\Users\Марина\source\repos\Authorization\Database\obj\Debug\Database.pdb
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\Database.dll.config
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\Database.dll
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\Database.pdb
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\EntityFramework.dll
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\EntityFramework.xml
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\obj\Debug\Database.csprojAssemblyReference.cache
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\obj\Debug\Database.csproj.CopyComplete
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\obj\Debug\Database.dll
+C:\Users\sasch\source\repos\Delegate\Authorization\Database\obj\Debug\Database.pdb

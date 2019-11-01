@@ -12,7 +12,7 @@ namespace Logic.ViewModel
         public static Dictionary<int, string> GetRoll()
         {
             Dictionary<int, string> RollView = new Dictionary<int, string>();
-            var roll = StaticValue.db.Roll;
+            var roll = SecurityContext.db.Roll;
             foreach(var item in roll)
             {
                 RollView.Add(item.Id, item.name);

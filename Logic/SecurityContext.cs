@@ -8,10 +8,10 @@ using Logic.Enums;
 
 namespace Logic
 {
-    public static class StaticValue
+    public static class SecurityContext
     {
         public static int IdUser = 0;
         public static int RollUser = 0;
-        public static UserContext db = new UserContext();
+        public static DbContext db = new DbContext();
     }
 }

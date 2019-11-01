@@ -36,8 +36,8 @@ namespace Authorization
             {
                 string Login = login.Text;
                 string Password = password.Text;
-                int roll = AuthorizationProcess.GetRollUser(Login, Password);
-                StaticValue.RollUser = roll;
+                int roll = UserLogic.Authorization(Login, Password);
+                SecurityContext.RollUser = roll;
                 switch (roll)
                 {
                     case 1:

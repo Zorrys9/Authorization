@@ -52,12 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\RollEnum.cs" />
-    <Compile Include="Model\AuthorizationProcess.cs" />
-    <Compile Include="Model\RegistrationProcess.cs" />
-    <Compile Include="Model\VerificationPassword.cs" />
+    <Compile Include="Model\UserRegistrationModel.cs" />
+    <Compile Include="UserLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticValue.cs" />
-    <Compile Include="ViewModel\RollesView.cs" />
+    <Compile Include="SecurityContext.cs" />
+    <Compile Include="RollesView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Database\Database.csproj">
@@ -65,7 +64,9 @@
       <Name>Database</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
